@@ -1,3 +1,4 @@
+from math import sqrt
 class Vector(object):
     def __init__(self, size, data):
         self.size = size
@@ -20,4 +21,4 @@ class Vector(object):
         abs_sq = 0
         for a in self.data:
             abs_sq += a * a
-        return abs_sq
+        return sqrt(abs_sq)
